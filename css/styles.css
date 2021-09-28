@@ -1,0 +1,59 @@
+/* универсальный
+елемента
+ID
+класса
+атрибута
+потомка
+ребенка
+ */
+
+a {
+    color: inherit;
+}
+
+* {
+    color: brown;
+}
+
+body {
+    color: brown;
+}
+
+p {
+    color: chartreuse;
+}
+
+#text,
+#text1 {
+    color: chocolate;
+}
+
+p.text {
+    color: darkblue;
+}
+
+.text-big {
+    font-size: 18px;
+}
+.text {
+    color: darkseagreen;
+    font-size: 23px;
+}
+
+a[href="http://google.com.ua"]
+{
+    color: darkcyan;
+}
+
+[href="http://google.com.ua"]
+{
+    color: darkorchid;
+}
+
+ul > li {
+    color: darkcyan;
+}
+
+/* .item ~ li > p {
+    color: darksalmon;
+} */
