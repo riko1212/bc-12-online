@@ -93,14 +93,31 @@ body {
     line-height: calc(15 / 11);
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.pre-title:before {
+    content: '';
+    width: 63px;
+    height: 1px;
+    margin-right: 21px;
 }
 
 .pre-title-light {
     color: var(--first-text-color);
 }
 
+.pre-title-light::before {
+    background-color: rgba(157, 164, 189, 0.6);
+}
+
 .pre-title-dark {
     color: var(--third-text-color);
+}
+
+.pre-title-dark::before {
+    background-color: var(--third-text-color);
 }
 
 .after-title {
@@ -214,6 +231,10 @@ body {
 
 .hero-right {
     background-color: var(--fifth-text-color);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     flex-grow: 1;
     padding: 272px 0 206px 91px;
 }
@@ -234,6 +255,7 @@ body {
 
 .hero-pre-title {
     margin-bottom: 20px;
+    
 }
 
 .hero-title {
@@ -243,6 +265,7 @@ body {
     color: var(--main-title-color);
     margin-bottom: 20px;
 }
+
 
 .hero-after-title {
     max-width: 400px;
@@ -257,6 +280,7 @@ body {
 .about-list {
     display: flex;
     margin-right: 64px;
+    flex-shrink: 0;
 }
 
 .about-item:not(:last-child) {
@@ -287,8 +311,18 @@ body {
 }
 
 /* ------------Prices--------------- */
+
+.prices-overlay {
+background-color: #282a2f;
+}
 .prices {
-    background-color: var(--second-title-color);
+    background-color: #111319;
+    background-image: url(../images/prices-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .prices-pre-text {
@@ -305,14 +339,41 @@ body {
 }
 
 .prices-item {
-    border: 1px solid #ffffff;
     width: 50%;
     padding: 30px 40px;
+}
+
+.prices-item-left {
+    background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.prices-item-right {
+    background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.prices-inner-list-left {
+
 }
 
 .prices-inner-item {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+}
+
+.prices-inner-item::before {
+content: '';
+height: 1px;
+flex-grow: 1;
+display: block;
+background-color: rgba(157, 164, 189, 0.12);
+flex-shrink: 0;
+margin-left: 6px;
+margin-right: 6px;
+}
+
+.prices-item-text-description {
+    order: -1;
 }
 
 .prices-inner-item:not(:last-child) {
@@ -363,6 +424,18 @@ body {
     color: var(--third-text-color);
     display: block;
     margin-bottom: 6px;
+    display: flex;
+    justify-content: center;
+}
+
+.reasons-digit::after {
+    content: '+';
+    font-weight: 600;
+font-size: 16px;
+line-height: calc(22 / 16);
+text-align: center;
+
+color: var(--accent-color);
 }
 
 .reasons-item-text {
@@ -405,6 +478,10 @@ body {
 }
 /* ------------Masters--------------- */
 
+.masters {
+    background-color: #F7F7F7;;
+}
+
 .masters-pre-text {
     margin-bottom: 20px;
 }
@@ -444,12 +521,49 @@ body {
     line-height: calc(19 / 14);
     text-align: center;
     letter-spacing: 0.02em;
-
+margin-bottom: 30px;
     color: var(--accent-color);
 }
 
 .masters-img {
     margin-bottom: 30px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-item{
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+
+.social-item:last-child {
+    margin-right: 0;
+}
+
+.social-link {
+    height: 100%;
+    background-color: teal;
+    border-radius: 50%;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    fill: #ffffff
+}
+
+.social-link:hover, .social-link:focus {
+    background-color: #ffffff;
+}
+
+.social-link:hover .social-icon, .social-link:focus .social-icon {
+    fill: var(--accent-color)
 }
 
 /* ------------Gallery--------------- */
@@ -472,7 +586,13 @@ body {
 
 .contacts-wrap {
     
-    background-color: var(--second-title-color);
+    background-color: #191C26;
+    background-image: url(../images/contacts-bg.png);
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: right;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .contacts-wrap-container{
