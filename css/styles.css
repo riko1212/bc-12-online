@@ -451,3 +451,43 @@ body {
 .masters-img {
     margin-bottom: 30px;
 }
+
+/* ------------Gallery--------------- */
+
+.gallery-pre-text {
+    margin-bottom: 44px;
+}
+
+.gallery-list {
+    display: flex;
+    margin-left: -30px;
+}
+
+.gallery-item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+}
+
+/* ------------------------------------- */
+
+.contacts-wrap {
+    
+    background-color: var(--second-title-color);
+}
+
+.contacts-wrap-container{
+    display: flex;
+}
+
+/* ------------Online--------------- */
+
+.online {
+    width: 50%;
+}
+
+/* ------------contacts--------------- */
+
+.contacts {
+    width: 50%;
+    padding-left: 100px;
+}
