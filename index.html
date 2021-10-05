@@ -629,6 +629,34 @@
                         >
                             Онлайн-запись
                         </h2>
+                        <form action="#" class="online-form">
+                            <div class="online-input-wrapper">
+                                <input
+                                    type="text"
+                                    name="user"
+                                    placeholder="Имя*"
+                                    required
+                                    class="online-input"
+                                />
+                                <input
+                                    type="tel"
+                                    name="user"
+                                    placeholder="Телефон*"
+                                    required
+                                    class="online-input online-input-short"
+                                />
+                            </div>
+                            <textarea
+                                name="message"
+                                class="online-message"
+                            ></textarea>
+                            <button
+                                type="submit"
+                                class="btn online-btn btn-light"
+                            >
+                                отправить
+                            </button>
+                        </form>
                     </section>
                     <section class="contacts section">
                         <h2
@@ -677,20 +705,84 @@
                 <button type="button" data-close-btn class="btn-close">
                     X
                 </button>
+                <p class="modal-title">
+                    Какой то важный текст для заголовка формы
+                </p>
+                <form action="#">
+                    <div class="form-fied">
+                        <label for="user-name" class="form-fied-text"
+                            >Ваше имя</label
+                        >
+                        <div class="input-wrapper">
+                            <input
+                                type="text"
+                                name="user-name"
+                                id="user-name"
+                                class="form-input"
+                            />
+                            <svg class="form-icon" width="18" height="18">
+                                <use
+                                    href="./images/sprite.svg#icon-person-black"
+                                ></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form-fied">
+                        <label for="user-email" class="form-fied-text"
+                            >Ваша почта</label
+                        >
+                        <input
+                            type="text"
+                            name="user-email"
+                            id="user-email"
+                            class="form-input"
+                        />
+                    </div>
+                    <div class="form-fied">
+                        <label for="user-tel" class="form-fied-text"
+                            >Ваш телефон</label
+                        >
+                        <input
+                            type="text"
+                            name="user-tel"
+                            id="user-tel"
+                            class="form-input"
+                        />
+                    </div>
+                    <div class="form-fied">
+                        <label for="user-comment" class="form-fied-text"
+                            >Коммент</label
+                        >
+                        <textarea
+                            name="user-comment"
+                            id="user-comment"
+                            class="form-text"
+                            placeholder="Введите коммент"
+                        ></textarea>
+                    </div>
+                    <input
+                        type="checkbox"
+                        class="form-checkbox visually-hidden"
+                        name="policy"
+                        id="policy"
+                    />
+                    <label for="policy" class="check-text">
+                        <span class="check-item">
+                            <svg class="check-icon" width="11" height="8">
+                                <use
+                                    href="./images/sprite.svg#icon-check"
+                                ></use>
+                            </svg>
+                        </span>
+                        Супер важная политика с <a href="">ссилкой</a></label
+                    >
+
+                    <button type="submit" class="btn form-btn">
+                        Отправить
+                    </button>
+                </form>
             </div>
         </div>
-        <script>
-            const refs = {
-                openModalBtn: document.querySelector("[data-open-btn]"),
-                closeModalBtn: document.querySelector("[data-close-btn]"),
-                backdrop: document.querySelector("[data-backdrop]"),
-            };
-            refs.openModalBtn.addEventListener("click", toggleModal);
-            refs.closeModalBtn.addEventListener("click", toggleModal);
-
-            function toggleModal() {
-                refs.backdrop.classList.toggle("is-hidden");
-            }
-        </script>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
