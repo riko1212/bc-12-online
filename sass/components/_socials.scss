@@ -1,0 +1,40 @@
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+.social-link {
+    height: 100%;
+    background-color: teal;
+    border-radius: 50%;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover,
+    &:focus {
+        background-color: #ffffff;
+    }
+    
+}
+
+.social-icon {
+    fill: #ffffff;
+    .social-link:hover &,
+    .social-link:focus & {
+        fill: var(--accent-color);
+    }
+}
+
+
+

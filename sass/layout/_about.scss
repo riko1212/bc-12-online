@@ -1,0 +1,38 @@
+.about-container {
+    display: flex;
+}
+
+.about-list {
+    display: flex;
+    margin-right: 64px;
+    flex-shrink: 0;
+}
+
+.about-item {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.about-pre-text {
+    margin-bottom: 20px;
+}
+
+.about-title {
+    margin-bottom: 20px;
+}
+
+.about-after-title {
+    margin-bottom: 20px;
+}
+
+.about-text {
+    margin-bottom: 40px;
+}
+
+.about-text {
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--fifth-text-color);
+}

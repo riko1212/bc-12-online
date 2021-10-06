@@ -1,0 +1,27 @@
+.btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    min-width: 160px;
+    height: 40px;
+    top: 36px;
+    border: 1px solid #ff6c00;
+    border-radius: 25px;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        color: var(--header-text-color);
+        background-color: var(--accent-color);
+    }
+}
+
+.btn-light {
+    color: var(--header-text-color);
+}
+
+.btn-dark {
+    color: var(--third-text-color);
+}
