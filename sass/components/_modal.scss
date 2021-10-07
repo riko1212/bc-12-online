@@ -96,8 +96,7 @@
     border: 2px solid #000000;
     border-radius: 3px;
     margin-right: 5px;
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
     justify-content: center;
 }
 

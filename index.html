@@ -27,34 +27,40 @@
     </head>
     <body>
         <header class="header">
-            <div class="container header-container">
+            <div class="container header__container">
                 <nav class="header-nav">
                     <a
                         href=""
-                        class="header-logo animate__animated animate__bounce"
+                        class="
+                            header-nav__logo
+                            logo
+                            animate__animated animate__bounce
+                        "
                         ><img src="./images/logo.svg" alt="Лого сайта"
                     /></a>
                     <ul class="header-list">
-                        <li class="header-item">
-                            <a class="header-link" href="">О нас</a>
+                        <li class="header-list__item">
+                            <a class="header-list__link" href="">О нас</a>
                         </li>
-                        <li class="header-item">
-                            <a class="header-link" href="">Услуги и цены</a>
+                        <li class="header-list__item">
+                            <a class="header-list__link" href=""
+                                >Услуги и цены</a
+                            >
                         </li>
-                        <li class="header-item">
-                            <a class="header-link" href="">Мастера</a>
+                        <li class="header-list__item">
+                            <a class="header-list__link" href="">Мастера</a>
                         </li>
-                        <li class="header-item">
-                            <a class="header-link" href="">Контакты</a>
+                        <li class="header-list__item">
+                            <a class="header-list__link" href="">Контакты</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="header-connect">
-                    <a class="header-contact" href="tel:+380441111111"
+                    <a class="header-connect__contact" href="tel:+380441111111"
                         >+38 044 111 11 11</a
                     >
                     <button
-                        class="header-btn btn btn-light"
+                        class="header-connect__btn btn btn-light"
                         data-open-btn
                         type="button"
                     >
@@ -65,7 +71,7 @@
         </header>
         <main>
             <section class="hero">
-                <div class="container hero-container">
+                <div class="container hero__container">
                     <ul class="hero-list">
                         <li class="hero-item">
                             <a class="hero-link" href="">Instagram</a>
@@ -77,16 +83,20 @@
                     <div class="hero-right">
                         <p
                             lang="en"
-                            class="pre-title hero-pre-title pre-title-light"
+                            class="
+                                pre-title
+                                hero__pre-title
+                                pre-title_color_light
+                            "
                         >
                             A hair salon for men in Kyiv
                         </p>
-                        <h1 class="hero-title" lang="en">BarberShop</h1>
+                        <h1 class="hero__title" lang="en">BarberShop</h1>
                         <p
                             class="
                                 after-title
-                                hero-after-title
-                                after-title-light
+                                hero__after-title
+                                after-title_color_light
                             "
                         >
                             Мы эксперты в модных мужских стрижках. Работаем
@@ -96,9 +106,9 @@
                 </div>
             </section>
             <section class="about section">
-                <div class="container about-container">
-                    <ul class="about-list">
-                        <li class="about-item">
+                <div class="container about__container">
+                    <ul class="about__list">
+                        <li class="about__item">
                             <img
                                 src="./images/about-img-1.jpg"
                                 alt="Барбер бреет бороду"
@@ -106,7 +116,7 @@
                                 height="445"
                             />
                         </li>
-                        <li class="about-item">
+                        <li class="about__item">
                             <img
                                 src="./images/about-img-2.jpg"
                                 alt="Барбер бреет кантик"
@@ -116,25 +126,33 @@
                         </li>
                     </ul>
                     <div class="about-right">
-                        <p class="about-pre-text pre-title pre-title-dark">
+                        <p
+                            class="
+                                about__pre-text
+                                pre-title pre-title_color_dark
+                            "
+                        >
                             О НАС
                         </p>
                         <h2
-                            class="about-title section-title section-title-dark"
+                            class="
+                                about__title
+                                section-title section-title_color_dark
+                            "
                         >
                             Лучший Барбершоп твоего города
                         </h2>
                         <p
                             class="
                                 after-title
-                                about-after-title
-                                after-title-dark
+                                about__after-title
+                                after-title_color_dark
                             "
                         >
                             Если ты хочешь добавить в свой образ больше
                             уверенности – тебе точно к нам.
                         </p>
-                        <p class="about-text">
+                        <p class="about__text">
                             Мы команда, которая никогда не останавливается на
                             достигнутом и жаждет перемен. И когда ты попадешь в
                             руки нашего мастера, то уже никогда не сможешь быть
@@ -142,7 +160,7 @@
                             одной волне". Поэтому, мы всегда готовы
                             усовершенствовать каждого, кто к нам приходит!
                         </p>
-                        <button type="button" class="btn about-btn btn-dark">
+                        <button type="button" class="btn about__btn btn-dark">
                             онлайн-запись
                         </button>
                     </div>
@@ -151,132 +169,137 @@
             <div class="prices-overlay">
                 <section class="prices section">
                     <div class="container">
-                        <p class="prices-pre-text pre-title pre-title-light">
+                        <p
+                            class="
+                                prices__pre-text
+                                pre-title pre-title_color_light
+                            "
+                        >
                             Проведи время в компании лучших мастеров
                         </p>
                         <h2
                             class="
-                                prices-title
-                                section-title section-title-light
+                                prices__title
+                                section-title section-title_color_light
                             "
                         >
                             Услуги и цены
                         </h2>
-                        <ul class="prices-list">
-                            <li class="prices-item prices-item-left">
-                                <ul class="prices-inner-list">
-                                    <li class="prices-inner-item">
+                        <ul class="prices__list">
+                            <li class="prices__item prices__item_side_left">
+                                <ul class="prices__inner-list">
+                                    <li class="prices__inner-item">
                                         <p
                                             class="
-                                                prices-item-text
-                                                prices-item-text-description
+                                                prices__item-text
+                                                prices__item-text-description
                                             "
                                         >
                                             Мужская стрижка
                                         </p>
-                                        <p class="prices-item-text">
+                                        <p class="prices__item-text">
                                             от 300 грн.
                                         </p>
                                     </li>
-                                    <li class="prices-inner-item">
+                                    <li class="prices__inner-item">
                                         <p
                                             class="
-                                                prices-item-text
-                                                prices-item-text-description
+                                                prices__item-text
+                                                prices__item-text-description
                                             "
                                         >
                                             Стрижка бороды
                                         </p>
-                                        <p class="prices-item-text">
+                                        <p class="prices__item-text">
                                             от 200 грн.
                                         </p>
                                     </li>
-                                    <li class="prices-inner-item">
+                                    <li class="prices__inner-item">
                                         <p
                                             class="
-                                                prices-item-text
-                                                prices-item-text-description
+                                                prices__item-text
+                                                prices__item-text-description
                                             "
                                         >
                                             Стрижка усов
                                         </p>
-                                        <p class="prices-item-text">
+                                        <p class="prices__item-text">
                                             от 200 грн.
                                         </p>
                                     </li>
-                                    <li class="prices-inner-item">
+                                    <li class="prices__inner-item">
                                         <p
                                             class="
-                                                prices-item-text
-                                                prices-item-text-description
+                                                prices__item-text
+                                                prices__item-text-description
                                             "
                                         >
                                             Бритье опасной бритвой
                                         </p>
-                                        <p class="prices-item-text">
+                                        <p class="prices__item-text">
                                             от 200 грн.
                                         </p>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="prices-item prices-item-right">
-                                <ul class="prices-inner-list">
-                                    <li class="prices-inner-item">
+                            <li class="prices__item prices__item_side_right">
+                                <ul class="prices__inner-list">
+                                    <li class="prices__inner-item">
                                         <p
                                             class="
-                                                prices-item-text
-                                                prices-item-text-description
+                                                prices__item-text
+                                                prices__item-text-description
                                             "
                                         >
                                             Cтрижка у стажера
                                         </p>
-                                        <p class="prices-item-text">
+                                        <p class="prices__item-text">
                                             от 50 грн.
                                         </p>
                                     </li>
-                                    <li class="prices-inner-item">
+                                    <li class="prices__inner-item">
                                         <p
                                             class="
-                                                prices-item-text
-                                                prices-item-text-description
+                                                prices__item-text
+                                                prices__item-text-description
                                             "
                                         >
                                             Стрижка под насадку
                                         </p>
-                                        <p class="prices-item-text">
+                                        <p class="prices__item-text">
                                             от 200 грн.
                                         </p>
                                     </li>
-                                    <li class="prices-inner-item">
+                                    <li class="prices__inner-item">
                                         <p
                                             class="
-                                                prices-item-text
-                                                prices-item-text-description
+                                                prices__item-text
+                                                prices__item-text-description
                                             "
                                         >
                                             Детская стрижка (до 12 лет)
                                         </p>
-                                        <p class="prices-item-text">
+                                        <p class="prices__item-text">
                                             от 300 грн.
                                         </p>
                                     </li>
-                                    <li class="prices-inner-item">
+                                    <li class="prices__inner-item">
                                         <p
                                             class="
-                                                prices-item-text
-                                                prices-item-text-description
+                                                prices__item-text
+                                                prices__item-text-description
                                             "
                                         >
                                             Камуфлирование седины
                                         </p>
-                                        <p class="prices-item-text">
+                                        <p class="prices__item-text">
                                             от 200 грн.
                                         </p>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
-                        <button type="button" class="btn btn-light prices-btn">
+                        <button type="button" class="btn btn-light prices__btn">
                             онлайн-запись
                         </button>
                     </div>
@@ -339,15 +362,20 @@
             </section>
             <section class="section masters">
                 <div class="container">
-                    <p class="masters-pre-text pre-title pre-title-dark">
+                    <p class="masters__pre-text pre-title pre-title_color_dark">
                         Для настоящих ценителей атмосферы
                     </p>
-                    <h2 class="masters-title section-title section-title-dark">
+                    <h2
+                        class="
+                            masters__title
+                            section-title section-title_colo_dark
+                        "
+                    >
                         Наши мастера
                     </h2>
-                    <ul class="masters-list">
-                        <li class="masters-item">
-                            <div class="masters-item-wrapper">
+                    <ul class="masters__list">
+                        <li class="masters__item">
+                            <div class="masters__item-wrapper">
                                 <img
                                     src="./images/master-img1.jpg"
                                     alt="барбер Джон Смит стрижет клиента"
@@ -355,7 +383,7 @@
                                     height="346"
                                     class="masters-img"
                                 />
-                                <p class="masters-top-text">
+                                <p class="masters__top-text">
                                     Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Ea fugiat expedita eius
                                     asperiores perspiciatis repellat, voluptates
@@ -364,13 +392,13 @@
                                     obcaecati eos?
                                 </p>
                             </div>
-                            <h3 class="masters-item-title">John Smith</h3>
-                            <p class="masters-item-text">Extreme Barber</p>
-                            <ul class="masters-item-list social-list">
-                                <li class="social-item">
-                                    <a href="" class="social-link">
+                            <h3 class="masters__item-title">John Smith</h3>
+                            <p class="masters__item-text">Extreme Barber</p>
+                            <ul class="masters__item-list social-list">
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link">
                                         <svg
-                                            class="social-icon"
+                                            class="social-list__icon"
                                             width="20"
                                             height="20"
                                         >
@@ -380,10 +408,10 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="social-item">
-                                    <a href="" class="social-link">
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link">
                                         <svg
-                                            class="social-icon"
+                                            class="social-list__icon"
                                             width="20"
                                             height="20"
                                         >
@@ -393,10 +421,10 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="social-item">
-                                    <a href="" class="social-link">
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link">
                                         <svg
-                                            class="social-icon"
+                                            class="social-list__icon"
                                             width="20"
                                             height="20"
                                         >
@@ -406,10 +434,10 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="social-item">
-                                    <a href="" class="social-link">
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link">
                                         <svg
-                                            class="social-icon"
+                                            class="social-list__icon"
                                             width="20"
                                             height="20"
                                         >
@@ -421,21 +449,31 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="masters-item">
-                            <img
-                                src="./images/master-img2.jpg"
-                                alt="барбер Мишель Доу стрижет клиента"
-                                width="370"
-                                height="346"
-                                class="masters-img"
-                            />
-                            <h3 class="masters-item-title">Michele Doe</h3>
-                            <p class="masters-item-text">Extreme Barber</p>
-                            <ul class="masters-item-list social-list">
-                                <li class="social-item">
-                                    <a href="" class="social-link">
+                        <li class="masters__item">
+                            <div class="masters__item-wrapper">
+                                <img
+                                    src="./images/master-img1.jpg"
+                                    alt="барбер Джон Смит стрижет клиента"
+                                    width="370"
+                                    height="346"
+                                    class="masters-img"
+                                />
+                                <p class="masters__top-text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ea fugiat expedita eius
+                                    asperiores perspiciatis repellat, voluptates
+                                    dolorum sint consequatur nostrum illum sunt
+                                    sequi quo, magni recusandae enim ducimus
+                                    obcaecati eos?
+                                </p>
+                            </div>
+                            <h3 class="masters__item-title">Michele Doe</h3>
+                            <p class="masters__item-text">Extreme Barber</p>
+                            <ul class="masters__item-list social-list">
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link">
                                         <svg
-                                            class="social-icon"
+                                            class="social-list__icon"
                                             width="20"
                                             height="20"
                                         >
@@ -445,10 +483,10 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="social-item">
-                                    <a href="" class="social-link">
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link">
                                         <svg
-                                            class="social-icon"
+                                            class="social-list__icon"
                                             width="20"
                                             height="20"
                                         >
@@ -458,10 +496,10 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="social-item">
-                                    <a href="" class="social-link">
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link">
                                         <svg
-                                            class="social-icon"
+                                            class="social-list__icon"
                                             width="20"
                                             height="20"
                                         >
@@ -471,10 +509,10 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="social-item">
-                                    <a href="" class="social-link">
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link">
                                         <svg
-                                            class="social-icon"
+                                            class="social-list__icon"
                                             width="20"
                                             height="20"
                                         >
@@ -486,21 +524,31 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="masters-item">
-                            <img
-                                src="./images/master-img3.jpg"
-                                alt="барбер Алан Блек стрижет клиента"
-                                width="370"
-                                height="346"
-                                class="masters-img"
-                            />
-                            <h3 class="masters-item-title">Alan Black</h3>
-                            <p class="masters-item-text">Extreme Barber</p>
-                            <ul class="masters-item-list social-list">
-                                <li class="social-item">
-                                    <a href="" class="social-link">
+                        <li class="masters__item">
+                            <div class="masters__item-wrapper">
+                                <img
+                                    src="./images/master-img1.jpg"
+                                    alt="барбер Джон Смит стрижет клиента"
+                                    width="370"
+                                    height="346"
+                                    class="masters-img"
+                                />
+                                <p class="masters__top-text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ea fugiat expedita eius
+                                    asperiores perspiciatis repellat, voluptates
+                                    dolorum sint consequatur nostrum illum sunt
+                                    sequi quo, magni recusandae enim ducimus
+                                    obcaecati eos?
+                                </p>
+                            </div>
+                            <h3 class="masters__item-title">Alan Black</h3>
+                            <p class="masters__item-text">Extreme Barber</p>
+                            <ul class="masters__item-list social-list">
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link">
                                         <svg
-                                            class="social-icon"
+                                            class="social-list__icon"
                                             width="20"
                                             height="20"
                                         >
@@ -510,10 +558,10 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="social-item">
-                                    <a href="" class="social-link">
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link">
                                         <svg
-                                            class="social-icon"
+                                            class="social-list__icon"
                                             width="20"
                                             height="20"
                                         >
@@ -523,10 +571,10 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="social-item">
-                                    <a href="" class="social-link">
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link">
                                         <svg
-                                            class="social-icon"
+                                            class="social-list__icon"
                                             width="20"
                                             height="20"
                                         >
@@ -536,10 +584,10 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="social-item">
-                                    <a href="" class="social-link">
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link">
                                         <svg
-                                            class="social-icon"
+                                            class="social-list__icon"
                                             width="20"
                                             height="20"
                                         >

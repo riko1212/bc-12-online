@@ -6,11 +6,11 @@
     padding-bottom: 32px;
 }
 
-.header-logo {
+.header-nav__logo {
     margin-right: 70px;
 }
 
-.header-link {
+.header-list__link {
     font-weight: 600;
     font-size: 12px;
     line-height: calc(16 / 12);
@@ -23,7 +23,7 @@
 }
 
 
-.header-contact {
+.header-connect__contact {
     font-weight: 600;
     font-size: 12px;
     line-height: calc(16 / 12);
@@ -37,15 +37,14 @@
 
 
 .header-nav {
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
 }
 
 .header-list {
     display: flex;
 }
 
-.header-item {
+.header-list__item {
     &:not(:last-child) {
         margin-right: 40px;
     }
@@ -55,16 +54,14 @@
     margin-left: 40px;
 } */
 
-.header-container {
-    display: flex;
-    align-items: center;
+.header__container {
+    @extend %flex-align;
 }
 
 .header-connect {
     margin-left: auto;
 }
 
-.header-btn {
-    margin-left: 40px;
+.header-connect__btn {
     margin-left: 40px;
 }

@@ -1,12 +1,10 @@
 .after-title {
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
+    @include font(18px, 30px, 0.02em);
 }
-.after-title-light {
+.after-title_color_light {
     color: var(--second-text-color);
 }
 
-.after-title-dark {
+.after-title_color_dark {
     color: var(--fifth-text-color);
 }

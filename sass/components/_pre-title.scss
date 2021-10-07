@@ -1,11 +1,8 @@
 .pre-title {
     font-weight: 600;
-    font-size: 11px;
-    line-height: calc(15 / 11);
-    letter-spacing: 0.1em;
+    @include font(11px, 15px, 0.01em);
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
     &:before {
         content: "";
         width: 63px;
@@ -15,7 +12,7 @@
 }
 
 
-.pre-title-light {
+.pre-title_color_light {
     color: var(--first-text-color);
     &::before {
         background-color: rgba(157, 164, 189, 0.6);
@@ -23,7 +20,7 @@
 }
 
 
-.pre-title-dark {
+.pre-title_color_dark {
     color: var(--third-text-color);
     &::before {
         background-color: var(--third-text-color);
