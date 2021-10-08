@@ -3,15 +3,35 @@
 }
 
 .about__list {
-    display: flex;
-    margin-right: 64px;
+    display: none;
+    // margin-right: 64px;
+    // flex-shrink: 0;
+    @media screen and (min-width: 768px) {
+display: flex;
+flex-direction: column;
+    margin-right: 30px;
     flex-shrink: 0;
+    margin-bottom: -30px;
+    width: 330px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: unset;
+        flex-direction: row;
+        width: unset;
+    }
 }
 
 .about__item {
-    &:not(:last-child) {
-        margin-right: 30px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
     }
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+                margin-right: 30px;
+        }
+        margin-bottom: unset;
+    }
+    
 }
 
 .about__pre-text {

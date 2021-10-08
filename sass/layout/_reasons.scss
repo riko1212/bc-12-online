@@ -1,22 +1,50 @@
 .section.reasons {
-    padding-top: 121px;
+    padding-top: 84px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 121px;
+    }
+}
+
+.reasons-pre-title {
+    margin-bottom: 20px;
 }
 
 .reasons-container {
     display: flex;
+    flex-direction: column-reverse;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
 }
 
 .reasons-list-wrap {
     display: flex;
     justify-content: center;
-    width: 50%;
+    // width: 50%;
+    width: 100%;
     flex-shrink: 0;
+     @media screen and (min-width: 768px) {
+        justify-content: flex-end;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 50%;
+        justify-content: center;
+    }
 }
 
 .reasons-list {
     display: flex;
-    width: 370px;
+// width: 370px;
+    width: 100%;
     flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
 }
 
 .reasons-digit {
@@ -52,7 +80,7 @@
 }
 
 .reasons-item {
-    width: 170px;
+    width: 44%;;
     height: 133px;
     border: 1px solid #000000;
     padding: 20px 24px;
@@ -61,6 +89,17 @@
     }
     &:nth-child(even) {
         margin-top: 30px;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 193px;
+    }
+
+     @media screen and (min-width: 768px) {
+        width: 210px;
+    }
+     @media screen and (min-width: 1200px) {
+        width: 170px;
     }
 }
 
@@ -78,4 +117,11 @@
 
 .reasons-after-title {
     max-width: 500px;
+}
+
+.reasons-right {
+    margin-bottom: 44px;
+    @media screen and (min-width: 768px) {
+        width: 500px;
+    }
 }

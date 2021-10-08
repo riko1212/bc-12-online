@@ -20,33 +20,66 @@
 }
 
 .prices__list {
-    display: flex;
+    // display: flex;
     margin-bottom: 50px;
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        background: unset;
+    }
+    .prices__item {
+        // width: 50%;
+        width: 100%;
+        padding: 30px 40px;
+            @media screen and (min-width: 1200px) {
+                width: 50%;
+        }
+    }
+    .prices__item_side_left {
+        // background-image: linear-gradient(
+        //     180deg,
+        //     #171a24 0%,
+        //     rgba(23, 26, 36, 0.2) 100%
+        // );
+        padding-bottom: 0;
+        margin-bottom: 20px;
+        @media screen and (min-width: 1200px) {
+                background-image: linear-gradient(
+            180deg,
+            #171a24 0%,
+            rgba(23, 26, 36, 0.2) 100%
+        );
+        margin-bottom: unset;
+        padding-bottom: 30px;
+        }
+    }
+
+    .prices__item_side_right {
+        // background-image: linear-gradient(
+        //     180deg,
+        //     #090b13 0%,
+        //     rgba(9, 11, 19, 0.2) 100%
+        // );
+        padding-top: 0;
+        @media screen and (min-width: 1200px) {
+                background-image: linear-gradient(
+            180deg,
+            #090b13 0%,
+            rgba(9, 11, 19, 0.2) 100%
+        );
+
+        padding-top: 30px;
+        }
+    }
 }
 
-.prices__item {
-    width: 50%;
-    padding: 30px 40px;
-}
 
-.prices__item_side_left {
-    background-image: linear-gradient(
-        180deg,
-        #171a24 0%,
-        rgba(23, 26, 36, 0.2) 100%
-    );
-}
 
-.prices__item_side_right {
-    background-image: linear-gradient(
-        180deg,
-        #090b13 0%,
-        rgba(9, 11, 19, 0.2) 100%
-    );
-}
+
 
 .prices__inner-list-left {
 }
+
 
 .prices__inner-item {
     display: flex;
@@ -77,10 +110,13 @@
 
 
 .prices__item-text {
-    font-size: 18px;
-    line-height: calc(30 / 18);
+    font-size: 14px;
+    line-height: calc(30 / 14);
     letter-spacing: 0.02em;
     color: var(--second-text-color);
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 .prices__btn {
