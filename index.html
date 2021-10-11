@@ -26,7 +26,7 @@
         <link rel="stylesheet" href="./css/main.min.css" />
     </head>
     <body>
-        <!-- <header class="header">
+        <header class="header">
             <div class="container header__container">
                 <nav class="header-nav">
                     <a
@@ -36,8 +36,11 @@
                             logo
                             animate__animated animate__bounce
                         "
-                        ><img src="./images/logo.svg" alt="Лого сайта"
-                    /></a>
+                        ><svg class="logo-icon" width="70" height="56">
+                            <use href="./images/sprite.svg#icon-logo"></use>
+                        </svg>
+                    </a>
+
                     <ul class="header-list">
                         <li class="header-list__item">
                             <a class="header-list__link" href="">О нас</a>
@@ -55,6 +58,9 @@
                         </li>
                     </ul>
                 </nav>
+                <button type="button" class="open-btn" data-menu-open-btn>
+                    <span></span>
+                </button>
                 <div class="header-connect">
                     <a class="header-connect__contact" href="tel:+380441111111"
                         >+38 044 111 11 11</a
@@ -68,9 +74,58 @@
                     </button>
                 </div>
             </div>
-        </header> -->
+            <div class="backdrop is-hidden" data-menu-backdrop>
+                <div class="mob-menu">
+                    <div class="mob-menu-top">
+                        <button
+                            type="button"
+                            data-menu-close-btn
+                            class="mob-menu-btn-close"
+                        >
+                            <span></span>
+                        </button>
+                        <ul class="mob-menu-list">
+                            <li class="mob-menu-item">
+                                <a href="#about" class="mob-menu-link">О нас</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a href="#prices" class="mob-menu-link"
+                                    >Услуги и цены</a
+                                >
+                            </li>
+                            <li class="mob-menu-item">
+                                <a href="#masters" class="mob-menu-link"
+                                    >Мастера</a
+                                >
+                            </li>
+                            <li class="mob-menu-item">
+                                <a href="" class="mob-menu-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mob-menu-bottom">
+                        <a href="" class="mob-menu-tel">+38 044 111 11 11</a>
+                        <button type="button" class="btn btn-dark mob-menu-btn">
+                            онлайн-запись
+                        </button>
+                        <ul class="mob-menu-social">
+                            <li class="mob-menu-social-item">
+                                <a href="" class="mob-menu-social-link"
+                                    >Instagram</a
+                                >
+                            </li>
+                            <li class="mob-menu-social-item">
+                                <a href="" class="mob-menu-social-link"
+                                    >Youtube</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
         <main>
-            <!-- <section class="hero">
+            <section class="hero">
                 <div class="container hero__container">
                     <ul class="hero-list">
                         <li class="hero-item">
@@ -104,25 +159,53 @@
                         </p>
                     </div>
                 </div>
-            </section> -->
-            <section class="about section">
+            </section>
+            <section class="about section" id="about">
                 <div class="container about__container">
                     <ul class="about__list">
                         <li class="about__item">
-                            <img
-                                src="./images/about-img-1.jpg"
-                                alt="Барбер бреет бороду"
-                                width="270"
-                                height="445"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/about-img-1.jpg    1x,
+                                        ./images/about-img-1-2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/about-img-1-tab.jpg    1x,
+                                        ./images/about-img-1-tab-2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <img
+                                    src="./images/about-img-1-tab.jpg"
+                                    alt="Барбер бреет бороду"
+                                />
+                            </picture>
                         </li>
                         <li class="about__item">
-                            <img
-                                src="./images/about-img-2.jpg"
-                                alt="Барбер бреет кантик"
-                                width="270"
-                                height="445"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/about-img-2.jpg    1x,
+                                        ./images/about-img-2-2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/about-img-2-tab.jpg    1x,
+                                        ./images/about-img-2-tab-2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <img
+                                    src="./images/about-img-2-tab.jpg"
+                                    alt="Барбер бреет бороду"
+                                />
+                            </picture>
                         </li>
                     </ul>
                     <div class="about-right">
@@ -167,7 +250,7 @@
                 </div>
             </section>
             <div class="prices-overlay">
-                <section class="prices section">
+                <section class="prices section" id="prices">
                     <div class="container">
                         <p
                             class="
@@ -365,7 +448,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section masters">
+            <section class="section masters" id="masters">
                 <div class="container masters-container">
                     <p class="masters__pre-text pre-title pre-title_color_dark">
                         Для настоящих ценителей атмосферы
@@ -616,34 +699,46 @@
                     <ul class="gallery-list">
                         <li class="gallery-item">
                             <img
+                                srcset="
+                                    ./images/gallery-img1-mob.jpg    1x,
+                                    ./images/gallery-img1-mob-2x.jpg 2x
+                                "
                                 src="./images/gallery-img1.jpg"
                                 alt="Рабочий процесс стрижки"
                                 width="270"
-                                height="360"
                             />
                         </li>
                         <li class="gallery-item">
                             <img
+                                srcset="
+                                    ./images/gallery-img2-mob.jpg    1x,
+                                    ./images/gallery-img2-mob-2x.jpg 2x
+                                "
                                 src="./images/gallery-img2.jpg"
                                 alt="Рабочий процесс стрижки"
                                 width="270"
-                                height="360"
                             />
                         </li>
                         <li class="gallery-item">
                             <img
+                                srcset="
+                                    ./images/gallery-img3-mob.jpg    1x,
+                                    ./images/gallery-img3-mob-2x.jpg 2x
+                                "
                                 src="./images/gallery-img3.jpg"
                                 alt="Рабочий процесс стрижки"
                                 width="270"
-                                height="360"
                             />
                         </li>
                         <li class="gallery-item">
                             <img
+                                srcset="
+                                    ./images/gallery-img4-mob.jpg    1x,
+                                    ./images/gallery-img4-mob-2x.jpg 2x
+                                "
                                 src="./images/gallery-img4.jpg"
                                 alt="Рабочий процесс стрижки"
                                 width="270"
-                                height="360"
                             />
                         </li>
                     </ul>
@@ -815,5 +910,6 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>
